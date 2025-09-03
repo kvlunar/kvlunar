@@ -10,7 +10,23 @@ Clone [the glue repo](https://github.com/kvlunar/rockets-glue) into a directory 
 $ git clone https://github.com/kvlunar/rockets-glue.git glue
 ```
 
-To deploy and run it, you need valid AWS credentials. If you don't feel comfortable with that, you can use pre-deployed services here:
+To deploy and run it, you need valid AWS credentials:
+
+```ini
+[default]
+region=eu-central-1
+aws_access_key_id=...
+aws_secret_access_key=...
+aws_session_token=...
+
+[dev1]
+region=eu-central-1
+aws_access_key_id=...
+aws_secret_access_key=...
+aws_session_token=...
+```
+
+If you don't feel comfortable with that, you can use pre-deployed services here:
 
 - event-facade: https://5bvo1s8en7.execute-api.eu-central-1.amazonaws.com/
 - dashboard: https://auxixcjav3.execute-api.eu-central-1.amazonaws.com/
